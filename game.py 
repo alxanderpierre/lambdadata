@@ -1,0 +1,6 @@
+"""
+Class to rep games
+"""
+
+class Game:
+  pass
