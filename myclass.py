@@ -13,6 +13,7 @@ class MyClass:
 
 
 
+
     def null(self):
         null_list = self.df.isnull().sum()
         return null_list
@@ -20,6 +21,9 @@ class MyClass:
     def dropcol(self, drop_clomuns):
         df = self.df.drop(columns=drop_clomuns)
         return df
+
+
+
 
     def split(self):
         train, test = train_test_split(self.df, train_size=.75)
