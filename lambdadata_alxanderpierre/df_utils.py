@@ -6,6 +6,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
+
 def null(X):
   null_list = X.isnull().sum()
   return null_list
@@ -22,7 +23,6 @@ def split(df):
 
 
 
-def dropcol(df):
-    df = df.copy()
-    df= df.drop(columns=[drop_clomuns])
+def dropcol(df,drop_clomuns):
+    df= df.drop(columns=drop_clomuns)
     return df
